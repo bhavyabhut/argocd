@@ -42,7 +42,7 @@ data:
     </head>
     <body>
         <div class="container">
-            <h1>Hello World!</h1>
+            <h1>Hello World!!!</h1>
             <p>This page is served from a Kubernetes cluster managed by ArgoCD.</p>
             <p class="subtitle">If you're seeing this, your deployment is working correctly!</p>
         </div>
