@@ -1,0 +1,50 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: hello-world-html
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Hello World!</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+                background: linear-gradient(45deg, #6ab7ff, #ff6ab7);
+                color: white;
+                text-align: center;
+            }
+            .container {
+                background-color: rgba(0, 0, 0, 0.4);
+                padding: 40px;
+                border-radius: 10px;
+                box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            }
+            h1 {
+                font-size: 48px;
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+            .subtitle {
+                opacity: 0.8;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Hello World!</h1>
+            <p>This page is served from a Kubernetes cluster managed by ArgoCD.</p>
+            <p class="subtitle">If you're seeing this, your deployment is working correctly!</p>
+        </div>
+    </body>
+    </html>
